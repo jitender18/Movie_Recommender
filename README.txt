@@ -54,12 +54,12 @@ Content and Use of Files
 ========================
 
 Formatting and Encoding
------------------------
+------------------------
 
 The dataset files are written as [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values) files with a single header row. Columns that contain commas (`,`) are escaped using double-quotes (`"`). These files are encoded as UTF-8. If accented characters in movie titles or tag values (e.g. Misérables, Les (1995)) display incorrectly, make sure that any program reading the data, such as a text editor, terminal, or script, is configured for UTF-8.
 
 User Ids
---------
+---------
 
 MovieLens users were selected at random for inclusion. Their ids have been anonymized. User ids are consistent between `ratings.csv` and `tags.csv` (i.e., the same id refers to the same user across the two files).
 
@@ -70,7 +70,7 @@ Only movies with at least one rating or tag are included in the dataset. These m
 
 
 Ratings Data File Structure (ratings.csv)
------------------------------------------
+------------------------------------------
 
 All ratings are contained in the file `ratings.csv`. Each line of this file after the header row represents one rating of one movie by one user, and has the following format:
 
@@ -83,7 +83,7 @@ Ratings are made on a 5-star scale, with half-star increments (0.5 stars - 5.0 s
 Timestamps represent seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
 
 Tags Data File Structure (tags.csv)
------------------------------------
+------------------------------------
 
 All tags are contained in the file `tags.csv`. Each line of this file after the header row represents one tag applied to one movie by one user, and has the following format:
 
@@ -127,7 +127,7 @@ Genres are a pipe-separated list, and are selected from the following:
 * (no genres listed)
 
 Links Data File Structure (links.csv)
----------------------------------------
+--------------------------------------
 
 Identifiers that can be used to link to other sources of movie data are contained in the file `links.csv`. Each line of this file after the header row represents one movie, and has the following format:
 
@@ -142,6 +142,6 @@ tmdbId is an identifier for movies used by <https://www.themoviedb.org>. E.g., t
 Use of the resources listed above is subject to the terms of each provider.
 
 Cross-Validation
-----------------
+-----------------
 
 Prior versions of the MovieLens dataset included either pre-computed cross-folds or scripts to perform this computation. We no longer bundle either of these features with the dataset, since most modern toolkits provide this as a built-in feature. If you wish to learn about standard approaches to cross-fold computation in the context of recommender systems evaluation, see [LensKit](http://lenskit.org) for tools, documentation, and open-source code examples.
