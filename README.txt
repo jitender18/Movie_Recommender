@@ -29,7 +29,7 @@ If you have any further questions or comments, please email <grouplens-info@umn.
 
 
 Citation
-========
+==========
 
 To acknowledge use of the dataset in publications, please cite the following paper:
 
@@ -37,7 +37,7 @@ To acknowledge use of the dataset in publications, please cite the following pap
 
 
 Further Information About GroupLens
-===================================
+=====================================
 
 GroupLens is a research group in the Department of Computer Science and Engineering at the University of Minnesota. Since its inception in 1992, GroupLens's research projects have explored a variety of fields including:
 
@@ -51,15 +51,15 @@ GroupLens Research operates a movie recommender based on collaborative filtering
 
 
 Content and Use of Files
-========================
+==========================
 
 Formatting and Encoding
-------------------------
+--------------------------
 
 The dataset files are written as [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values) files with a single header row. Columns that contain commas (`,`) are escaped using double-quotes (`"`). These files are encoded as UTF-8. If accented characters in movie titles or tag values (e.g. Misérables, Les (1995)) display incorrectly, make sure that any program reading the data, such as a text editor, terminal, or script, is configured for UTF-8.
 
 User Ids
----------
+-----------
 
 MovieLens users were selected at random for inclusion. Their ids have been anonymized. User ids are consistent between `ratings.csv` and `tags.csv` (i.e., the same id refers to the same user across the two files).
 
